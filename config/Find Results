@@ -1,0 +1,82 @@
+Searching 1745 files for "simple_search_filters"
+
+/Users/maria/Desktop/code/advanced_search/package.json:
+    1  {
+    2:   "name": "simple_search_filters",
+    3    "private": true,
+    4    "dependencies": {}
+
+/Users/maria/Desktop/code/advanced_search/config/cable.yml:
+    8    adapter: redis
+    9    url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
+   10:   channel_prefix: simple_search_filters_production
+   11  
+
+/Users/maria/Desktop/code/advanced_search/config/database.yml:
+   24  development:
+   25    <<: *default
+   26:   database: simple_search_filters_development
+   27  
+   28    # The specified database role being used to connect to postgres.
+   ..
+   58  test:
+   59    <<: *default
+   60:   database: simple_search_filters_test
+   61  
+   62  # As with config/secrets.yml, you never want to store sensitive information,
+   ..
+   82    <<: *default
+   83    database: simple_search__filtersproduction
+   84:   username: simple_search_filters
+   85    password: <%= ENV['SIMPLE_SEARCH_DATABASE_PASSWORD'] %>
+   86  
+
+/Users/maria/Desktop/code/advanced_search/log/development.log:
+    <binary>
+
+/Users/maria/Desktop/code/advanced_search/tmp/cache/bootsnap-load-path-cache:
+    <binary>
+
+21 matches across 5 files
+
+
+Searching 1745 files for "simple_search_filters"
+
+/Users/maria/Desktop/code/advanced_search/package.json:
+    1  {
+    2:   "name": "simple_search_filters",
+    3    "private": true,
+    4    "dependencies": {}
+
+/Users/maria/Desktop/code/advanced_search/config/cable.yml:
+    8    adapter: redis
+    9    url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
+   10:   channel_prefix: simple_search_filters_production
+   11  
+
+/Users/maria/Desktop/code/advanced_search/config/database.yml:
+   24  development:
+   25    <<: *default
+   26:   database: simple_search_filters_development
+   27  
+   28    # The specified database role being used to connect to postgres.
+   ..
+   58  test:
+   59    <<: *default
+   60:   database: simple_search_filters_test
+   61  
+   62  # As with config/secrets.yml, you never want to store sensitive information,
+   ..
+   82    <<: *default
+   83    database: simple_search__filtersproduction
+   84:   username: simple_search_filters
+   85    password: <%= ENV['SIMPLE_SEARCH_DATABASE_PASSWORD'] %>
+   86  
+
+/Users/maria/Desktop/code/advanced_search/log/development.log:
+    <binary>
+
+/Users/maria/Desktop/code/advanced_search/tmp/cache/bootsnap-load-path-cache:
+    <binary>
+
+21 matches across 5 files
