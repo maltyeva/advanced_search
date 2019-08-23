@@ -1,9 +1,9 @@
 <div class="container">
-  <h1>Cocktails</h1>
-  <hr>
   <div class="row">
     <div class="col-xs-12 col-sm-4">
       <div class="position-sticky sticky-form">
+        <h1>Cocktails</h1>
+        <hr>
         <%= simple_form_for :search, url: root_path, method: "GET", remote: true do |f| %>
           <%= f.input :flavors, label: "Category",  collection: $categories, as: :check_boxes, onClick: "test"%>
           <%= f.input :strengths, label: "Flavor", collection: $flavors, as: :check_boxes  %>
@@ -20,27 +20,11 @@
 </div>
 <script type="text/javascript">
   var checkBoxes = document.querySelectorAll(".form-check-input");
-  const form = document.querySelector('form');
-  let values = []
+  var form = document.querySelector('form');
   
   for (const check of checkBoxes) {
   check.addEventListener( 'change', function() {
-    if(this.checked) {
-        // Checkbox is checked..
-      console.log("checked")
-      // const value = this.value
-      // values.push(value)
-      Rails.fire(form, 'submit');
-  
-    } else {
-        // Checkbox is not checked..
-      console.log("unchecked")
-      // let badValue = this.values
-      // values = values.filter(value => value != badValue);
-      Rails.fire(form, 'submit');
-      console.log('<%= params[:search]%>')
-  
-    }
+    Rails.fire(form, 'submit');
   });
   }
 </script>

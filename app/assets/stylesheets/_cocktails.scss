@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400|Raleway&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", "Helvetica", sans-serif;
+  font-weight: 300;
+}
+
+p, body {
+  font-family: "Raleway", "Helvetica", sans-serif;
+}
+
 .sticky-form {
   top: 0;
 }
