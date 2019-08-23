@@ -1,0 +1,15 @@
+var filter = '<%= @filter %>'
+function replaceCocktails (innerHTML) {
+  const cocktails = document.getElementById('cocktails');
+  cocktails.innerHTML = innerHTML;
+}
+
+
+if (filter.length == 2) {
+replaceCocktails("<%= j render 'cocktail', cocktails: Cocktail.all %>");
+}
+else {
+replaceCocktails("<%= j render 'cocktail', cocktails: @cocktails %>");
+}
+
+

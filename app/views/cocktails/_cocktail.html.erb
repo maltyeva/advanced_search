@@ -1,0 +1,10 @@
+<% cocktails.each do |cocktail| %>
+  <h3><%= cocktail.name %></h3>
+  <p><%= cocktail.preparation %></p>
+  <button class="btn-primary">
+    <%= cocktail.flavor_list %>
+  </button>
+  <button class="btn-danger">
+    <%= cocktail.category_list %>
+  </button>
+<% end %>
